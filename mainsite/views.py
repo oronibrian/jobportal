@@ -10,3 +10,10 @@ def index(request):
         'title':title,
     }
     return render(request, 'index.html',context)
+
+def about(request):
+    title='About Us'
+    context ={
+        'title':title
+    }
+    return render(request, 'about.htlm',context)
